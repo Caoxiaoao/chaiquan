@@ -1,0 +1,22 @@
+A: 100
+B: 255
+G: 50
+R: 100
+a:
+  B: 200
+  G: 50
+  R: 100
+  background_b: 255
+  background_g: 86
+  background_r: 69
+rosdistro: 'noetic
+
+  '
+roslaunch:
+  uris:
+    host_curry_virtualbox__36643: http://curry-VirtualBox:36643/
+    host_curry_virtualbox__38561: http://curry-VirtualBox:38561/
+rosversion: '1.16.0
+
+  '
+run_id: a1d63bfc-1acc-11ee-b6c9-1bb84413391c

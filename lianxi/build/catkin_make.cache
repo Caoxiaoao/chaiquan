@@ -1,0 +1,2 @@
+tongxin
+-DCATKIN_DEVEL_PREFIX=/home/curry/lianxi/devel -DCMAKE_INSTALL_PREFIX=/home/curry/lianxi/install -G Unix Makefiles

@@ -1,0 +1,16 @@
+<launch>
+    <node pkg="turtlesim" type="turtlesim_node" name="a" output="screen">
+        <remap from="/turtle1/cmd_vel" to="/cmd_vel" />
+        <!--格式2：node下-->
+        <param name="B" value="200" /><!--参数前有节点名称的命名空间-->
+        <!--格式2：node下-->
+        <rosparam command="load" file="$(find launch_basic)/yaml/rosparam.yaml" />
+    </node>
+    <node pkg="turtlesim" type="turtle_teleop_key" name="b" output="screen" />
+    <!--param使用，向参数服务器设置参数-->
+    <!--格式1：launch下，node外-->
+    <param name="A" value="100" /><!--在参数服务器中设置一个参数名为A，值为100的参数-->
+    <!--rosparam使用：操作参数服务器数据-->
+    <!--格式1：launch下，node外-->
+    <rosparam command="load" file="$(find launch_basic)/yaml/rosparam.yaml" /><!--加载参数-->
+</launch>
